@@ -43,12 +43,9 @@ var Login = React.createClass({
 
 export default class TorontoToolLibraryApp extends Component {
   render() {
-	  let pic = {
-	        uri: 'http://torontotoollibrary.com/wp-content/uploads/2014/04/logo1-150x150.png'
-    };
     return (
       <View style={styles.container}>
-        <Image source={pic} style={{width: 150, height: 150}}/>
+        <Image source={require('./img/logo1-150x150.png')}/>
         <Text style={styles.welcome}>
           Welcome to The Toronto Tool Library App!
         </Text>
